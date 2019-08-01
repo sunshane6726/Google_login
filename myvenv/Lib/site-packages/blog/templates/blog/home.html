@@ -1,0 +1,28 @@
+{% load socialaccount %}
+{% providers_media_js %}
+    
+    <h1>hell world!</h1>
+    
+    <a href="/accounts/signup">회원가입</a><br>
+    
+    {% if user.is_authenticated %}
+    <!-- 로그인이 되어있다면-->
+    <a href="/accounts/logout">로그아웃</a><br>
+    {{user.username}} 님이 로그인 중
+    
+    {% else %}
+    <!-- 로그인 x-->
+    <a href="">구글 로그인</a><br>
+    여러분 로그인 해야댐
+    
+    {% endif %}
+
+    <br> <br>
+    {% for blog in blog.all %}
+
+    <img src="{{blog.image.url}}" width="500">
+    <br>
+    {{blog.text}}
+    <br>
+    <img src="{{blog.image_thumbnail.url}}">
+    {%endfor%}
