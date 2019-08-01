@@ -1,3 +1,5 @@
+'''
+
 import os
 from setuptools import find_packages, setup
 
@@ -32,3 +34,5 @@ setup(
         'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
     ],
 )
+
+'''
