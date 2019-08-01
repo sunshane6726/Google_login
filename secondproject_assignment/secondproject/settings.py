@@ -152,5 +152,7 @@ LOGIN_REDIRECT_URL = '/'
 
 ### 기타설정등 ###
 # git checkout -b branch-2 가지를 만든다. 
+# git fetch를 연습하도록 한다.
+
 
 
